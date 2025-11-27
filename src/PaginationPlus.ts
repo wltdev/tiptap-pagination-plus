@@ -257,7 +257,6 @@ export const PaginationPlus = Extension.create<PaginationPlusOptions>({
             const currentPageCount = getExistingPageCount(editor.view);
 
             const recalculatePageCount = needNewDecoration(editor.view, this.options, this.storage);
-            console.log("Recalculate Page Count", recalculatePageCount);
 
             if (
               (pageCount > 1 ? pageCount : 1) !== currentPageCount || 
